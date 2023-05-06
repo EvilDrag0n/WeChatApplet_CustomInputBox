@@ -1,0 +1,23 @@
+form{
+  display: flex;
+  justify-content: space-around;
+  width:100%;
+}
+form input{
+  height: 42rpx;
+  width:42rpx;
+  border:1px solid #cdcdcd;
+  border-radius: 4rpx;
+  display: inline-block;
+  line-height: 80px;
+  text-align: center;
+  font-size: 35rpx;
+  color:#323232;
+  margin:0 4rpx;
+}
+form .hidden_ipt{
+  height: 0rpx;
+  width:0rpx;
+  border:none;
+  margin:0;
+}

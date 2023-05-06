@@ -1,0 +1,17 @@
+<form>
+  <view class='ipt_box'>
+    <input 
+    type='number' wx:for="{{prefixLenth}}" wx:key="{{index}}" 
+    disabled bindtap='onFocus'
+    value="{{iptValue.length>=index+1?iptValue[index]:''}}"
+    />
+    <input wx:for="{{placeholderLength}}" wx:key="{{index}}" disabled value="*" />
+    <input 
+    type='number' wx:for="{{suffixLenth}}" wx:key="{{index}}" 
+    disabled bindtap='onFocus'
+    value="{{iptValue.length>= prefixLenth+index+1?iptValue[prefixLenth+index]:''}}"
+    />
+  </view>
+<input 
+name="myCode" class='hidden_ipt' maxlength="{{prefixLenth+suffixLenth}}" focus="{{isFocus}}" bindinput="setValue"/>
+</form>
